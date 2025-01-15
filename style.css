@@ -1,0 +1,360 @@
+/*********************************************************/
+/********************* texto *********************/
+/*********************************************************/
+
+/*
+#142126
+#7AACBF
+#255459
+#32A69A
+#2CBF96
+
+#F20F22
+#8C0B16
+#1BDDF2
+#F20F0F
+#261414 
+
+font-family: "Press Start 2P", system-ui;
+font-family: "Play", sans-serif;
+*/
+
+h1 {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+  color: #32a69a;
+}
+
+h2 {
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-size: max(20px, 2.8vw);
+  color: #2cbf96;
+}
+
+.texto {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: min(3vw, 16px); /* Tornar o tamanho da fonte responsivo */
+  color: #2cbf96;
+  max-width: 100%; /* Garanta que o texto não ultrapassa a largura do main-screen */
+}
+
+* {
+  color: #2cbf96;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-size: max(10px, 0.7vw);
+}
+
+/* Adicionar estilos ao formulário */
+.form-group label {
+  color: #2cbf96;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-size: max(10px, 0.7vw);
+}
+
+.form-control {
+  border-color: #2cbf96;
+  color: #2cbf96;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-size: max(10px, 0.5vw);
+}
+
+.form-control:focus {
+  border-color: #32a69a;
+  box-shadow: 0 0 0 0.2rem rgba(50, 166, 154, 0.25);
+}
+
+.btn-primary {
+  background-color: #32a69a;
+  border-color: #32a69a;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-size: max(10px, 0.5vw);
+}
+
+.btn-primary:hover {
+  background-color: #2cbf96;
+  border-color: #2cbf96;
+}
+
+#back-btn {
+  background-color: #32a69a;
+  border-color: #32a69a;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 200;
+  font-size: max(10px, 0.5vw);
+}
+
+#back-btn:hover {
+  background-color: #2cbf96;
+  border-color: #2cbf96;
+}
+
+/*********************************************************/
+/********************* texto *********************/
+/*********************************************************/
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  padding-top: 20px; /* Adiciona um preenchimento superior para evitar que o conteúdo seja cortado */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alterado para flex-start para garantir que o conteúdo comece no topo */
+}
+
+.full-screen {
+  height: 50vh; /* Alterado para ocupar 60% da altura da tela */
+}
+
+.center {
+  text-align: center;
+}
+
+#monitor-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+#monitor {
+  background-image: url("./images/computer.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  max-width: 1300px; /* Aumenta o máximo para garantir que o computador possa crescer */
+  padding-bottom: 80%; /* Aumenta o padding-bottom para aumentar o tamanho do computador */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 50%;
+}
+
+#main-screen {
+  margin-top: 6vh;
+  width: 67%; /* Alterado para ocupar 90% da largura do monitor */
+  height: 73vh; /* Aumentado para ocupar 80% da altura do monitor */
+  overflow-y: auto;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  padding: 5%;
+  background-color: black;
+  align-items: center;
+  align-content: center;
+}
+
+.section-buttons {
+  margin-top: 30%;
+}
+
+.retro-button {
+  width: 150px; /* Define a largura fixa do botão */
+  height: 50px; /* Define a altura fixa do botão */
+  padding: 10px; /* Ajuste o preenchimento conforme necessário */
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #ff0066;
+  border: 2px solid #ff0066;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.retro-button:hover {
+  background-color: #ffe033;
+  color: #000;
+}
+
+.shape-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Define a altura do contêiner para a altura da tela */
+}
+
+.shape {
+  width: 200px;
+  height: 200px; /* Ajusta a altura para um quadrado, você pode mudar conforme necessário */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: blue;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+table {
+  width: 300px; /* Define a largura da tabela */
+  height: 300px; /* Define a altura da tabela */
+  border-collapse: collapse; /* Remove a separação entre as células */
+}
+
+td {
+  width: 100px; /* Define a largura das células */
+  height: 100px; /* Define a altura das células */
+  text-align: center; /* Centraliza o texto horizontalmente */
+  vertical-align: middle; /* Centraliza o texto verticalmente */
+  border: 1px solid rgb(255, 255, 255); /* Adiciona uma borda às células */
+  word-wrap: break-word; /* Permite que o texto quebre para caber na célula */
+  align-items: center;
+}
+
+.center {
+  display: flex; /* Use flexbox para centralizar */
+  padding-top: 1%;
+  margin-bottom: 5%;
+  justify-content: center; /* Centralize horizontalmente */
+  align-items: center; /* Centralize verticalmente */
+}
+
+#sizeDisplay {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 3px 6px; /* Reduzindo o preenchimento */
+  border-radius: 3px;
+  font-size: 12px; /* Reduzindo o tamanho da fonte */
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .retro-button {
+    width: 150px; /* Mantenha a largura fixa no modo desktop */
+  }
+}
+
+@media (min-width: 992px) {
+  /* Adicione mais media queries conforme necessário para ajustes específicos */
+}
+
+/*********************************************************/
+/********************* Código do Jogo *********************/
+/*********************************************************/
+.textojogo {
+  white-space: pre;
+  overflow-x: auto;
+  font-size: 0.3em; /* Reduz o tamanho da fonte */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+  background-color: #ccc;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #00b5cc;
+  border-radius: 5px;
+  transition: all 400ms ease;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url("../images/back.png");
+  backface-visibility: hidden;
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
+
+/* Estilo para o título do jogo e o timer */
+.player-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+/* Estilo para o número de tentativas */
+.attempts {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#end-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/*********************************************************/
+/********************* Fim do Jogo **********************/
+/*********************************************************/
